@@ -1,7 +1,7 @@
 # classification_densenet
-시작 하기 전, 이 실험은 Tensorfloww Library API을 기반으로 Colab이 제공하는 GPU를 사용하였다. 실험 결과로 (Train, Validation)Accuracy, Loss, feature map, Grad CAM을 확인할 수 있다.
+이 실험은 Tensorfloww Library API을 기반으로 Colab이 제공하는 GPU를 사용하였습니다. 실험 결과로 (Train, Validation)Accuracy, Loss, feature map, Grad CAM을 확인할 수 있었습니다.
 
-#### - 데이터는 kaggle에서 제공하는 Cats-vs-Dogs 데이터를 이용하여 2만 5천장에서 1만 7천개를 train_data, 4천개를 validation_data, test_data 4000으로 나누어 실험을 진행하였음.
+#### - 데이터는 kaggle에서 제공하는 Cats-vs-Dogs 데이터를 이용하여 2만 5천장 중 1만 7천장을 train_data, 4천장을 validation_data, test_data 4000으로 나누어 실험을 진행
 
 ## DenseNet(Densely Connected Convolutional Networks)
 DenseNEt은 각 Layer와 후속 Layer 사이에 각각 하나씩 직접 L(L+1) 연결을 가지고 있다. 각 Layer는 모든 이전 Layer의 feature map을 입력으로 사용한다. 이 구성은 소멸 단계 문제를 완하하고, 전파를 강화하며, 재사용에 용이하며, 매개변수 수를 크게 감소시킨다.
